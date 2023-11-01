@@ -1,20 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, Box, Center, Heading, FormControl, FormControlLabel, FormControlLabelText } from "@gluestack-ui/themed"
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+      <Box bg="$primary100" p="$2" h={200} w={300}>
+        <Center h={"$full"}>
+          <Heading>Peso Ideal</Heading>
+          <FormControl>
+            <FormControlLabel>
+              <FormControlLabelText>
+                Peso
+              </FormControlLabelText>
+            </FormControlLabel>
+          </FormControl>
+        </Center>
+      </Box>
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
