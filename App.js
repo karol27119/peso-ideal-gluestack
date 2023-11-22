@@ -1,18 +1,13 @@
-import { Text, Box, Center, Heading, FormControl, FormControlLabel, FormControlLabelText } from "@gluestack-ui/themed"
+import { Text, Box, Heading, Center } from '@gluestack-ui/themed';
 
 export default function App() {
   return (
-      <Box bg="$primary100" p="$2" h={200} w={300}>
-        <Center h={"$full"}>
-          <Heading>Peso Ideal</Heading>
-          <FormControl>
-            <FormControlLabel>
-              <FormControlLabelText>
-                Peso
-              </FormControlLabelText>
-            </FormControlLabel>
-          </FormControl>
-        </Center>
+    <Box h={'$full'} w={'$full'} display='flex' justifyContent='center' alignItems='center'>
+      <Box bg='$amber400' p="$2" >
+        <Heading>PESO IDEAL</Heading>
+        <Text>Altura</Text>
       </Box>
-  )
+    </Box>
+
+  );
 }
