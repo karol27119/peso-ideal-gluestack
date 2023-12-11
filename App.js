@@ -42,13 +42,13 @@ export default function Main() {
             <FormControlLabelText color="#D16014">Peso</FormControlLabelText>
           </FormControlLabel>
           <Input w={"$full"} borderColor="#313715">
-            <InputField value={peso} onChangeText={setPeso} keyboardType="numeric" color="#313715"/>
+            <InputField value={peso} onChangeText={setPeso} keyboardType="numeric" color="#313715"  returnKeyType='done'/>
           </Input>
           <FormControlLabel>
             <FormControlLabelText color="#D16014" >Altura</FormControlLabelText>
           </FormControlLabel>
           <Input w={"$full"} borderColor="#313715" >
-            <InputField value={altura} onChangeText={setAltura} keyboardType="numeric" color="#313715"/>
+            <InputField value={altura} onChangeText={setAltura} keyboardType="numeric" color="#313715"  returnKeyType='done'/>
           </Input>
           <FormControlLabel >
             <FormControlLabelText color="#D16014">Sexo</FormControlLabelText>
